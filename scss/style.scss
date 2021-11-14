@@ -1,0 +1,24 @@
+@import 'imports/_normalize';
+@import 'imports/_fonts';
+@import 'imports/_mixin';
+@import 'imports/_navbar';
+@import 'imports/_welcome';
+@import 'imports/_section';
+@import 'imports/_footer';
+
+main {
+    padding-top: 4em;
+}
+
+body {
+    max-width: 100vw;
+    overflow-x: hidden;
+    font-family: $main-font;
+}
+
+@media only screen and (min-width: 1200px) {
+    main {
+        width: 85%;
+        margin: 0 auto;
+    }
+}

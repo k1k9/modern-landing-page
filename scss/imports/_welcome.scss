@@ -1,0 +1,108 @@
+.welcome {
+    width: 100%;
+    // height: 100vh;
+    padding: 0 .5em 4em .5em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    .main-text {
+        margin-top: 2em;
+        font-size: 3em;
+        font-weight: 800;
+        text-align: center;
+
+        span {
+            @include gradient(#692ca7, #cc076a);
+        }
+    }
+
+    .buttons {
+        width: 100%;
+        margin-top: 4em;
+        justify-content: space-around;
+
+        .btn-light{
+            border: 1px solid #eeeeee;
+        }
+    }
+}
+
+
+.promo-text{
+    color:#666;
+    font-size: 1.25em;
+    padding: 4em 0;
+}
+// 
+// 
+// RWD
+// 
+// 
+@media only screen and (min-width: 576px) {
+    .welcome {
+        width: 85%;
+        margin: 0 auto;
+        .main-text{
+            font-size: 2.5em;
+        }
+
+        .buttons{
+            width: 70%;
+            margin: 3em auto 0em auto;
+        }
+    }
+
+    .promo-text{
+        font-size: 1.5em;
+        padding:1em;
+    }
+}
+
+@media only screen and (min-width: 768px){
+    .welcome{
+        .main-text{
+            font-size: 3em;
+        }
+
+        .buttons{
+            font-size: 2em;
+            .btn{
+                padding: .4em 1.5em;
+            }
+        }
+    }
+    .promo-text{
+        width: 80%;
+        margin: 0 auto;
+    }
+}
+
+@media only screen and (min-width: 992px){
+    .welcome{
+        .main-text{
+            font-size: 4em;
+        }
+        .buttons{
+            width: 50%;
+        }
+    }
+    .promo-text{
+        padding-top:5em;
+        width: 75%;
+    }
+}
+@media only screen and (min-width: 1400px){
+  .welcome{
+      width: 80%;
+      .main-text{
+          font-size: 4.5em;
+      }
+  }
+  .promo-text{
+      width: 60%;
+      font-size: 1.7em;
+      padding:0;
+  }
+}

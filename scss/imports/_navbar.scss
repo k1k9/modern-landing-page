@@ -1,0 +1,23 @@
+.navbar{
+    width: 100vw;
+    background-color: hsla(0,0%,100%,0.8);
+    backdrop-filter: saturate(180%) blur(5px);
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+
+    .navbar-toggler{
+        box-shadow: none;
+        border: none
+    }
+
+    .navbar-brand{
+        span{
+            font-weight: 500;
+        }
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .navbar {
+        padding: .3em 2em;
+    }
+}

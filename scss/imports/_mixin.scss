@@ -1,0 +1,30 @@
+
+// Gradient animation for text
+@mixin gradient($color1, $color2){
+    background: linear-gradient(to right, $color1 20%, $color2 40%, $color2 60%, $color1 80%);
+    background-size: 200% auto;
+    color: #000;
+    background-clip: text;
+    text-fill-color: transparent;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: shine 3s linear infinite;
+    @keyframes shine {
+        to {
+            background-position: 200% center;
+        }
+    }
+}
+
+// Only for section header, modify gradient colors
+@mixin sectionGradient($color1, $color2){
+    header{
+        .path-line{background: linear-gradient(0deg, $color1, $color2,#aaaaaa, #fff);}
+        .number{background: linear-gradient(90deg,$color1,$color2);}
+        .title{
+            background: linear-gradient(90deg,$color1,$color2);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    }
+}
